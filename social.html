@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                background-image: url(bg.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .block1{
+                height: 670px;
+                background-color: transparent;
+            }
+            .block1 .welcom{
+                background-color: black;
+                color: white;
+                margin: 20px 20px;
+                padding: 20px 20px;
+                text-align: center;
+                border: thin red solid;
+                position: absolute;
+                top: 300px;
+                left: 42px;
+                width: 1200px;
+                animation-name:welcom;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+                border-radius: 10px;
+
+            }
+            @keyframes welcom{
+                0%{opacity: .8;}
+                50%{opacity:0.5;}
+                100%{opacity: .8;}
+            }
+            .navb{
+                background-color: black;
+                margin: 2px 0px;
+                height: 30px;
+                text-align: right;
+
+            }
+            .logo{
+                cursor: pointer;
+                height: 30px;
+                position: absolute;
+            }
+            .navb ul{
+                padding: 0px 2.5px;
+                list-style: none;
+            }
+            .navb ul li{
+                display: inline-block;
+                margin: 5px;
+
+            }
+            .navb ul li a{
+                margin: 0px 15px;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                font-size: 15px;
+                width: 89px;
+                height: 45px;
+                transition: background 0.5s;
+            }
+            .navb ul li a:hover{
+                transition: ease;
+                background-color: white;
+                color: black;
+            }
+            .social{
+                text-align: center;
+                background-color: coral;
+                
+            }
+            .social meda{
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-53%,-50%);
+            }
+            .social h1{
+                font-weight: lighter;
+                font-size: 80px;
+                color: white;
+                text-align: center;
+                padding-top: 50px ;
+                margin-bottom: 0px;
+            }
+            .social li{
+                list-style: none;
+                margin: 10px 30px;
+                display: inline-block;
+                font-size: 20px;
+                padding: 20px 20px;
+                color: white;
+                border: 1px solid white;
+                border-radius: 50%;
+                transition: .5s;
+            }
+            .social li:hover{
+                 color: black;
+                 border: 2px dotted black;
+                 transition: .5s;
+            }
+            .block2{
+                background-color: black;
+                height: 150px;
+                text-align: center;
+
+            }
+            .block2 .content2 p{
+                color: white;
+                font-family: cursive;
+                font-weight: 300;
+                margin: 20px;
+                padding-top: 20px;
+                /* float: right; */
+
+            }
+            .block2 .content2 img{
+                float: left;
+                margin: 0px 15px;
+                margin-top: 15.3px;
+            }
+            #adjust{
+                height: 5px;
+            }
+            .block3{
+                height: 600px;
+                background-color: black;
+            }
+            .block3 .sblock3{
+                height: 600px;
+                background-image: url(4.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                /* width: 100px; */
+                background-position: center;
+
+            }
+           .block3 .sblock3 .content3 {
+            height: 500px;
+            margin: 0px 100px;
+            padding: 50px 150px;
+            /* background-color: black; */
+           }
+           .block3 .sblock3 .content3 a{
+               text-decoration: none;
+               text-align: center;
+               color: red;
+               font-family: cursive;
+               display: block;
+            float: left;
+
+            width: 250px;
+            padding: 0px 10px;
+            font-size: 20px;
+
+           }
+           .block3 .sblock3 .content3 a img{
+            width: 250px;
+            height: 300px;
+            display: block;
+            float: left;
+            padding: 0px 10px;
+            transition: transform 1s;
+           }
+
+           .block3 .sblock3 .content3 a img:hover{
+            transform: translate(1px,70px);
+            font-size: 70px;
+           }
+
+        </style>
+          <script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+
+        <!-- NAVBAR CONTENT -->
+        <a href="#"><img class="logo" src="http://prodimages.everythingneon.com/giant/n105-1962-green-restaurant-neon-sign.jpg" alt="Logo"></a>
+        <div class="navb">
+            <ul>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#explore">EXPLORE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </div>
+        <!-- END OF NAV -->
+
+        <!-- PAGE-1 WELCOME  -->
+        <div class="block1">
+          <div class="welcom">
+              WELCOME
+          </div>
+        </div>
+        <!-- END OF PAGE-1 -->
+
+        <!-- STRIP-1 -->
+        <div class="block2">
+            <div class="content2">
+                <img src="2.jpg" width="120px" height="120px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum
+                    nostrum quisquam ab, reiciendis aut vel eius odio doloribus neque. Nihil
+                     aut neque iure tempora voluptates est debitis sunt reprehenderit?</p>
+
+            </div>
+        </div>
+        <!-- END OF STRIP-1 -->
+
+        <div class="block3">
+            <div class="sblock3">
+                <div class="content3">
+                    <a href="#burger">BURGERS<img src="burg.jpg"></a>
+                    <a href="#pizza">PIZZA<img src="pizz.jpg"></a>
+                    <a href="#pastry">PASTRY<img src="pas.jpg"></a>
+                </div>
+                <!-- <div class="nametag">
+                    <ul>
+                        <li>BURGER</li>
+                        <li>PIZZA</li>
+                        <li>PASTRY</li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+
+
+        <div class="block2">
+            <div class="content2">
+                <img src="2.jpg" width="120px" height="120px">
+                <p style="margin-top: 0px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum
+                    nostrum quisquam ab, reiciendis aut vel eius odio doloribus neque. Nihil
+                     aut neque iure tempora voluptates est debitis sunt reprehenderit?</p>
+
+            </div>
+        </div>
+        <div class="social">
+            <h1>Social Platforms</h1> 
+            <ul>
+            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#"><i class="fa  fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </body>
+</html
