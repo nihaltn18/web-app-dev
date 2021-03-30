@@ -1,0 +1,30 @@
+*{
+    background-color: blueviolet;
+    color: darkturquoise;
+    text-decoration: underline;
+    font-style: italic;
+}
+div{
+    text-align: center;
+    background-color: deepskyblue;
+}
+div div{
+    text-align: center;
+    color: dimgray;
+    background-color: firebrick;
+}
+input{
+    color: firebrick;
+    background-color: floralwhite;
+    display: block;
+    text-align: center;
+    position: relative;
+    right: -40%;
+    border-radius: 100px;
+    width: 300px;
+    height:30px;
+}
+.submit{
+    background-color: black;
+    color: white;
+}
